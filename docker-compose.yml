@@ -1,0 +1,12 @@
+version: "2"
+
+services: 
+    grav:
+        container_name: grav-dev
+        image: grav-dev
+        build: .
+        ports:
+            - 80:80
+        volumes:
+            - ./a2conf/apache2.conf:/etc/apache2/apache2.conf
+            - ./grav:/var/www/html
