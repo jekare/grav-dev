@@ -28,7 +28,7 @@ sudo usermod -aG www-data $USER
 ```
 sudo chown -Rf www-data:www-data grav
 ```
-* Log out and log in again to activate the new group rights.
+* log out and log in again to activate the new group rights
 * now build and start the container, alwys make sure to start from the right directory
 ```
 cd my-grav-dir
