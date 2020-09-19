@@ -35,6 +35,6 @@ cd my-grav-dir
 docker-compose up -d
 ```
 * open a browser and go to [localhost](http://localhost)
-* if all went well you are greeted with the admin user setup screen
+* if all went well you are greeted with the admin user setup screen:
 
-![image][.github/grav-admin-setup.png]
+![grav-admin-setup](https://user-images.githubusercontent.com/7894742/93665165-9e777280-fa74-11ea-8b7e-8ce678fbfd76.png)
