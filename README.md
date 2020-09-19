@@ -3,12 +3,11 @@ Grav development setup in a Docker container based on Ubuntu
 
 Looking for an easy way to setup a [Grav](https://getgrav.org/) development environment I decided this would be a nice project to start learning [Docker](https://www.docker.com/). So here you have it, perhaps more people might be interested in this set up.
 
-# remarks
+# Remarks
 * Based on Ubuntu 20.04 LTS
 * Webserver Apache v2.4.41
 * PHP v7.4.3
-* Grav v1.6.27
-* including the Admin plugin v1.9.16
+* Grav v1.6.27 including the Admin plugin v1.9.16
 
 # Setup
 * create a directory and clone this repository into that directory
