@@ -34,3 +34,5 @@ sudo chown -Rf www-data:www-data grav
 cd my-grav-dir
 docker-compose up -d
 ```
+* open a browser and go to [localhost](http://localhost)
+* if all went well you are greeted with the admin user setup screen
