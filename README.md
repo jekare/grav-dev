@@ -34,8 +34,7 @@ sudo chown -Rf www-data:www-data grav
 cd ~/my-grav-dir/grav-dev
 docker-compose up -d
 ```
-* open a browser and go to [localhost](http://localhost)
-* if all went well you are greeted with the default grav welcome page:
+* open a browser and go to [localhost](http://localhost) where you are greeted with the default grav welcome page:
 
 ![Screenshot from 2020-09-19 13-57-06](https://user-images.githubusercontent.com/7894742/93666649-1a2aec80-fa80-11ea-9bc1-e7ca40662988.png)
 
