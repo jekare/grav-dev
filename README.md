@@ -10,10 +10,11 @@ Looking for an easy way to setup a [Grav](https://getgrav.org/) development envi
 * Grav v1.6.27 including the Admin plugin v1.9.16
 
 # Setup
-* create a directory and clone this repository into that directory
+* clone this repository to your own system and enter the grav-dev directory
 ```
-mkdir my-grav-dir && cd my-grav-dir
+mkdir ~/my-dev-dir && cd ~/my-dev-dir
 git clone https://github.com/jekare/grav-dev.git
+cd grav-dev
 ```
 * if the www-data group does not exist yet then create it
 ```
@@ -30,7 +31,7 @@ sudo chown -Rf www-data:www-data grav
 * log out and log in again to activate the new group rights
 * now build and start the container, always make sure to start from the right directory
 ```
-cd my-grav-dir
+cd ~/my-grav-dir/grav-dev
 docker-compose up -d
 ```
 * open a browser and go to [localhost](http://localhost)
