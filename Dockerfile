@@ -1,14 +1,12 @@
-# See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.134.1/containers/ubuntu/.devcontainer/base.Dockerfile
+# See here for image contents: https://github.com/tianon/docker-brew-ubuntu-core/blob/a5fc6fc792ed9dfc0ddf897178c9e05a0d2a9718/focal/Dockerfile
 FROM ubuntu:20.04
 
-# setup tzdata + update + upgrade + make user sysadmin + add to sudo group
+# setup tzdata + update + upgrade + install apache2, php and nano
 ENV TZ=Europe/Amsterdam
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
     && echo $TZ > /etc/timezone \    
     && apt-get update \
     && apt-get upgrade -y \
-#    && adduser sysadmin \
-#    && usermod -aG sudo sysadmin \
     && apt-get install -y apache2 \
     && apt-get install -y php7.4 \
     && apt-get install -y php7.4-gd \
@@ -20,10 +18,6 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
     && a2enmod rewrite
 
 WORKDIR /var/www/html
-
-#RUN wget https://getgrav.org/download/core/grav-admin/latest \
-#    && unzip grav-admin.zip -d ./grav \
-#    && chown -rf www-data:www-data ./grav
 
 EXPOSE 80 443
 
